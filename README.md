@@ -15,7 +15,6 @@ This project is a Kafka-based application that demonstrates the usage of KafkaJS
     - [Running the Consumer](#running-the-consumer)
   - [Troubleshooting](#troubleshooting)
   - [Contributing](#contributing)
-  - [License](#license)
   - [Contact](#contact)
 
 ## Features
@@ -92,9 +91,6 @@ node consumer.js
 
 Contributions are welcome! Please open an issue or submit a pull request with any improvements or bug fixes.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
