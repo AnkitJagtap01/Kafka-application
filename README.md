@@ -34,6 +34,68 @@ This project is a Kafka-based application that demonstrates the usage of KafkaJS
 ## Installation
 
 1. Clone the repository:
-   ```bash
+   \`\`\`bash
    git clone https://github.com/AnkitJagtap01/Kafka-application.git
    cd Kafka-application
+   \`\`\`
+
+2. Install the dependencies:
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+## Configuration
+
+Configure the Kafka broker connection settings in the \`config.js\` file:
+\`\`\`javascript
+module.exports = {
+  clientId: 'my-app',
+  brokers: ["<PRIVATE_IP>:9092"],
+  topic: 'your-topic-name',
+  connectionTimeout: 10000,
+  retry: {
+    retries: 5
+  }
+};
+\`\`\`
+
+## Usage
+
+### Running the Producer
+
+To start the Kafka producer and send messages to the topic:
+\`\`\`bash
+node producer.js
+\`\`\`
+
+### Running the Consumer
+
+To start the Kafka consumer and read messages from the topic:
+\`\`\`bash
+node consumer.js
+\`\`\`
+
+## Troubleshooting
+
+### Common Errors and Solutions
+
+- **KafkaJSConnectionError: Connection timeout**
+  - Ensure the Kafka broker is running and reachable.
+  - Check your network configuration and broker settings.
+  - Increase the \`connectionTimeout\` and \`retries\` in the configuration.
+
+- **KafkaJSNumberOfRetriesExceeded**
+  - Verify the broker address and port.
+  - Ensure there are no network policies blocking the connection.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request with any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or inquiries, please contact [Ankit Jagtap](mailto:jagtap.an@northeastern.edu).
