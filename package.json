@@ -1,0 +1,11 @@
+{
+  "name": "Kafka-appllication",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AnkitJagtap01/Kafka-appllication",
+  "author": "AnkitJagtap01 <jagtap.an@northeastern.edu>",
+  "license": "MIT",
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}
